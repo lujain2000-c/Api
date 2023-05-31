@@ -1,37 +1,36 @@
 //
-//  SecondView.swift
+//  ChineseTextView .swift
 //  ApiProject
 //
-//  Created by لجين إبراهيم الكنهل on 10/11/1444 AH.
+//  Created by لجين إبراهيم الكنهل on 11/11/1444 AH.
 //
+
 import SwiftUI
 
-
-struct Holidays: Codable, Identifiable {
-    var id: String {
-        date
-    }
-    let date: String
-    let localName: String
-    let name: String
+struct Word: Codable{
+    let words: [Chinese]
 }
 
+struct Chinese: Codable{
+    let id: String
+    let entrytype: String
+    let headword: String
+    
+}
 
-
-
-struct SecondView: View {
-    @State var holidays = [Holidays]()
+struct ChineseTextView_: View {//Chinese Text 
+    @State var texts = [Chinese]()
     
     var body: some View {
         VStack {
             
-            List(holidays){ holiday in
+            List(texts,id: \.id){ text in
                 VStack{
-                    Text(holiday.localName)
+                    Text(text.entrytype)
                         .bold()
                         .foregroundColor(.green)
-                    Text(holiday.name)
-                    Text(holiday.date)
+                    Text(text.headword)
+                
                     
                     //  Text(quote.author)
                     
@@ -48,9 +47,8 @@ struct SecondView: View {
         }
     }
     func loadData() async {
-        //   "https://www.breakingbadapi.com/api/quotes"
-        //            //airport-web.appspot.com/_ah/api
-        guard let url = URL(string: "https://date.nager.at/api/v2/publicholidays/2020/US")
+       
+        guard let url = URL(string: "https://api.ctext.org/getdictionaryheadwords")
         else{
             print("error")
             return
@@ -62,9 +60,9 @@ struct SecondView: View {
             print(response)
             
             do {
-                let serverHoliday = try JSONDecoder().decode([Holidays].self, from: data)
+                let serverHoliday = try JSONDecoder().decode(Word.self, from: data)
                 
-                holidays = serverHoliday
+                texts = serverHoliday.words
                 
             } catch {
                 print(error)
@@ -77,9 +75,8 @@ struct SecondView: View {
     
 }
 
-
-struct SecondView_Previews: PreviewProvider {
+struct ChineseTextView__Previews: PreviewProvider {
     static var previews: some View {
-        SecondView()
+        ChineseTextView_()
     }
 }

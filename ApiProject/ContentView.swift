@@ -9,11 +9,6 @@
 
 import SwiftUI
 
-//struct Quote: Codable{
-//    var quote_id: Int
-//    var quote: String
-//    var author: String
-//}
 struct Fruit: Codable{
     var id: Int
     var name: String
@@ -78,7 +73,7 @@ struct ContentView: View {
                         //print(serverMenu)
                     }
                 }catch{
-                    print("bad new not valid")
+                    print(error)
                 }
             }
             
