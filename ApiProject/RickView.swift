@@ -50,7 +50,7 @@ struct RickView: View {
         }
     
         func loadData() async {
-         //   "https://www.breakingbadapi.com/api/quotes"
+         
             guard let url = URL(string: "https://rickandmortyapi.com/api/character/108") else{
                 print("error")
                 return

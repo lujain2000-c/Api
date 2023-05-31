@@ -1,0 +1,44 @@
+
+{
+  "title": "Third JSON Example",
+  "difficulty": "Third",
+  "description": "This is the Third JSON example for parsing practice.",
+  "data": {
+    "courses": [
+      {
+        "title": "Mathematics",
+        "students": [
+          {
+            "name": "Mohammed",
+            "grade": "A"
+          },
+          {
+            "name": "Khalid",
+            "grade": "B"
+          },
+          {
+            "name": "Afnan",
+            "grade": "C"
+          }
+        ]
+      },
+      {
+        "title": "Science",
+        "students": [
+          {
+            "name": "Mohammed",
+            "grade": "B"
+          },
+          {
+            "name": "Khalid",
+            "grade": "A"
+          },
+          {
+            "name": "Afnan",
+            "grade": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

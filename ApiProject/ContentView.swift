@@ -55,7 +55,7 @@ struct ContentView: View {
         }
     }
         func loadData() async {
-         //   "https://www.breakingbadapi.com/api/quotes"
+        
             guard let url = URL(string: "https://www.fruityvice.com/api/fruit/all") else{
                 print("error")
                 return

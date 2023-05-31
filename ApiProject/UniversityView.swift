@@ -31,12 +31,8 @@ struct UniversityView: View {
                         .foregroundColor(.blue)
                     Text(university.country)
                     
-                        
                 }
                 
-
-                 
-                    
                 }
             .task{
                 await loadData()

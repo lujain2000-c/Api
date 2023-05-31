@@ -59,14 +59,10 @@ struct ChineseTextView_: View {//Chinese Text
         
             print(response)
             
-            do {
+            
                 let serverHoliday = try JSONDecoder().decode(Word.self, from: data)
                 
                 texts = serverHoliday.words
-                
-            } catch {
-                print(error)
-            }
         
         } catch{
             print(error)

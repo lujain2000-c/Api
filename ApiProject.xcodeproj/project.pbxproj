@@ -24,6 +24,9 @@
 		6A793A0F2A270A3400711222 /* CatPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A793A0E2A270A3400711222 /* CatPhotoView.swift */; };
 		6A793A132A270CFB00711222 /* ChineseTextView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A793A122A270CFB00711222 /* ChineseTextView .swift */; };
 		6A793A152A27197600711222 /* Covid19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A793A142A27197600711222 /* Covid19View.swift */; };
+		6A793A172A27288200711222 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A793A162A27288200711222 /* City.swift */; };
+		6A793A192A27B99100711222 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A793A182A27B99100711222 /* data.json */; };
+		6A793A1B2A27BA2400711222 /* ThirdJsonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A793A1A2A27BA2400711222 /* ThirdJsonExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		6A793A0E2A270A3400711222 /* CatPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPhotoView.swift; sourceTree = "<group>"; };
 		6A793A122A270CFB00711222 /* ChineseTextView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChineseTextView .swift"; sourceTree = "<group>"; };
 		6A793A142A27197600711222 /* Covid19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19View.swift; sourceTree = "<group>"; };
+		6A793A162A27288200711222 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		6A793A182A27B99100711222 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		6A793A1A2A27BA2400711222 /* ThirdJsonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdJsonExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +96,15 @@
 				6A793A022A26764200711222 /* RickView.swift */,
 				6A793A0C2A27061D00711222 /* PhotoView.swift */,
 				6A793A0E2A270A3400711222 /* CatPhotoView.swift */,
+				6A793A1A2A27BA2400711222 /* ThirdJsonExample.swift */,
 				6A7939C22A25831300711222 /* DeckOfCardsApi.swift */,
 				6A7939C62A2617E300711222 /* FoodView.swift */,
 				6A7939C82A26239400711222 /* IpView.swift */,
 				6A793A042A26802A00711222 /* UniversityView.swift */,
 				6A793A082A26906D00711222 /* MakeupView.swift */,
 				6A793A0A2A2700D900711222 /* Test.swift */,
+				6A793A162A27288200711222 /* City.swift */,
+				6A793A182A27B99100711222 /* data.json */,
 			);
 			path = ApiProject;
 			sourceTree = "<group>";
@@ -167,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7939BA2A250B4600711222 /* Preview Assets.xcassets in Resources */,
+				6A793A192A27B99100711222 /* data.json in Resources */,
 				6A7939B62A250B4600711222 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,8 +200,10 @@
 				6A793A0F2A270A3400711222 /* CatPhotoView.swift in Sources */,
 				6A793A092A26906D00711222 /* MakeupView.swift in Sources */,
 				6A793A152A27197600711222 /* Covid19View.swift in Sources */,
+				6A793A1B2A27BA2400711222 /* ThirdJsonExample.swift in Sources */,
 				6A7939B22A250B4400711222 /* ApiProjectApp.swift in Sources */,
 				6A793A132A270CFB00711222 /* ChineseTextView .swift in Sources */,
+				6A793A172A27288200711222 /* City.swift in Sources */,
 				6A793A052A26802A00711222 /* UniversityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
